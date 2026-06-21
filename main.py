@@ -1778,5 +1778,5 @@ async def dashboard_page(request: Request):
 async def panel_page(request: Request):
     return HTMLResponse(content=PANEL_HTML)
 
-if name == "main":
+if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=CONFIG["port"])
